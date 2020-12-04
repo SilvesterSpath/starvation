@@ -1,0 +1,85 @@
+/* Universal Styles */
+
+html {
+  font-size: 18px;
+	background-color: #434950;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* Reusable Component - Image Container */
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  background: #000;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+/* App Styles */
+
+.App {
+  font-family: 'Work Sans', sans-serif;
+}
+
+h1 {
+  padding: .66rem 0;
+  text-align: center;
+  background-color: #434950;
+  font-family: Titan One, sans-serif;
+  font-size: 2.2rem;
+  color: #EDD051;
+}
+
+.box {		
+	position: absolute;
+	width: 100%;
+	height: 133px;
+	left: 0px;
+	top: 55px;
+
+	background: linear-gradient(180deg, #5E6472 0%, rgba(196, 196, 196, 0) 91.35%);
+}
+
+.box2 {		
+	position: absolute;
+	width: 100%;
+	height: 133px;
+	left: 0px;
+	top: 380px;
+
+	background: linear-gradient(0deg, #5E6472 0%, rgba(196, 196, 196, 0) 100%);
+}
+
+@media only screen and (max-width: 560px) {
+	  html {
+    font-size: 15px;
+  }
+	.box {		
+		position: absolute;
+		width: 100%;
+		height: 113px;
+		left: 0px;
+		top: 51px;
+
+		background: linear-gradient(180deg, #5E6472 0%, rgba(196, 196, 196, 0) 91.35%);
+	}
+
+	.box2 {		
+		position: absolute;
+		width: 100%;
+		height: 83px;
+		left: 0px;
+		top: 345px;
+
+		background: linear-gradient(0deg, #5E6472 0%, rgba(196, 196, 196, 0) 100%);
+		z-index: 0;
+	}
+}
